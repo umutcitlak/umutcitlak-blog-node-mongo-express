@@ -28,5 +28,12 @@ router.get("/login", function (req, res) {
 router.get("/register", function (req, res) {
   res.render("site2/register");
 });
+router.get("/post/new", function (req, res) {
+  res.render("site2/addpost");
+});
+
+router.post('/posts/test',(req,res)=>{
+  res.redirect('/');
+})
 
 module.exports = router;
